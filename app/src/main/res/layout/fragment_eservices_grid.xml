@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    android:layoutDirection="rtl"
+    android:padding="@dimen/padding"
+    tools:context="com.moh.app.Fragment_EservicesGrid">
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/activity_vertical_margin"
+        tools:listitem="@layout/row_application_item"
+
+
+        ></GridView>
+
+</FrameLayout>

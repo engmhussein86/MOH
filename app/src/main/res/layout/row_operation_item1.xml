@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:layout_marginBottom="@dimen/padding"
+    android:background="@drawable/shape"
+    android:gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="1dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="1dp"
+            android:text="الاسم"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/MR_FULL_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="تاريخ الميلاد"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/MRP_DOB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="1dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="1dp"
+            android:text="رقم الهوية"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/MRP_ID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="رقم الجوال"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/OP_PATIENT_MOBILE_NO"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="1dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="1dp"
+            android:text="المستشفى"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/H_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="تاريخ الدخول"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/OP_ENTER_DATE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="1dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="1dp"
+            android:text="اسم العملية"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/ICD_NAME_EN"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="نوع العملية"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/OP_TYPE_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="1dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="1dp"
+            android:text="تاريخ العملية"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/OP_TIME"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="اسم الدكتور"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/DOCTOR_NAME"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            tools:context="com.moh.app.eservices.HolidayFragment">
+
+            <LinearLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="12">
+
+                <TextView
+                    android:id="@+id/request_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="2.5"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="طلب اجازة"
+                    android:textColor="@color/icons" />
+
+                <TextView
+                    android:id="@+id/waiting_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="4"
+                    android:background="@color/divider"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="طلبات في الانتظار"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/view_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/divider"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="عرض الاجازات"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/back_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="2.5"
+                    android:background="@color/divider"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="اقرار العودة"
+                    android:textColor="@color/primary_text" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/request_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="@dimen/padding"
+                            android:text="الاسم:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/fontDesc"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/USER_FULL_NAME"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/fontDesc"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:text="طلب اجازة"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/title"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EMPHOLIDAYS_HCOUNT"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding"
+                    android:hint="الرجاء ادخال مدة الاجازة بالأرقام"
+                    android:inputType="number"
+                    android:theme="@style/MyEditText"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <CheckBox
+                        android:id="@+id/FRIDAY"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+
+                        android:checked="true"
+                        android:text="احتساب الجمعة"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/SATURDAY"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+
+                        android:checked="true"
+                        android:text="احتساب السبت"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/EMPHOLIDAYS_STARTDATE"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding"
+                    android:hint="تاريخ بداية الاجازة"
+                    android:theme="@style/MyEditText" />
+
+
+                <EditText
+                    android:id="@+id/EMPHOLIDAYS_ENDDATE"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding"
+                    android:hint="تاريخ العودة من الاجازة"
+                    android:theme="@style/MyEditText" />
+
+
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_btn"
+                    android:text="اضافة"
+                    android:textColor="@color/icons" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/waiting_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/padding"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="الرقم"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="2"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="الاسم"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.75"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="المدة"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="البداية"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="النهاية"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.25"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="الحالة"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/wait_holiday_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/view_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="7"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/FROMDATE"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding"
+                        android:layout_weight="3"
+                        android:hint="من"
+                        android:theme="@style/MyEditText" />
+
+                    <EditText
+                        android:id="@+id/TODATE"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding"
+                        android:layout_weight="3"
+                        android:hint="إلى"
+                        android:theme="@style/MyEditText" />
+
+                    <ImageView
+
+                        android:id="@+id/search_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_search_black_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/padding"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.75"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="نوع الاجازة"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.75"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="المدة"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.25"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="البداية"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.25"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="النهاية"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="2"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="الحالة"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view_holiday_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/back_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/padding"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="الرقم"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="2"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="الاسم"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.75"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="المدة"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="البداية"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="النهاية"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.25"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/back_holiday_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/info_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_info"
+        app:backgroundTint="@color/colorPrimary"
+        app:tint="@color/icons" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

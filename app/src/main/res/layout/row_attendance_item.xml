@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attn_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:layout_marginBottom="1dp"
+    android:gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:weightSum="6"
+
+    >
+
+    <TextView
+        android:id="@+id/ATTENDDAT"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="التاريخ"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ATTDAY"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="اليوم"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ATTENDTIM"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="الحضور"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ARRTIME"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="الانصراف"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ARRIDATE"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="تاريخ الخروج"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ATTENDSTA"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="حالة الدوام"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

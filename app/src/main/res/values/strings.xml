@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">MOH - Palestine</string>
+    <string name="no_internet">لا يوجد اتصال بالانترنت</string>
+    <string name="poor_internet">الاتصال ضعيف</string>
+    <string name="general_error">يوجد خطأ</string>
+    <string name="action_search">جاري البحث</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="action_check_updates">البحث عن تحديثات</string>
+    <string name="action_help">مساعدة</string>
+    <string name="action_share">مشاركة</string>
+
+    <string name="font_name">HelveticaNeueW23-Reg.ttf</string>
+    <string name="font_name_bold">HelveticaNeueW23-Bd.ttf</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_news">أخبار الوزارة</string>
+    <string name="nav_phones">دليل الهواتف</string>
+    <string name="nav_national_days">الأيام الصحية العالمية</string>
+    <string name="nav_contactus">اتصل بنا</string>
+    <string name="nav_settings">الاعدادات</string>
+    <string name="nav_eservices">الدخول الموحد SSO</string>
+    <string name="nav_applications">تطبيقات وزارة الصحة</string>
+    <string name="nav_log_out">تسجيل الخروج</string>
+    <string name="nav_exit">اغلاق</string>
+    <string name="nav_about">عن النظام</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>الرئيسية</item>
+        <item>أخبار الوزارة</item>
+        <item>دليل الهاتف</item>
+        <item>اتصل بنا</item>
+        <item>الدخول الموحد SSO</item>
+        <item>الخدمات الالكترونية</item>
+        <item>التأمين الصحي</item>
+        <item>الالتزامات المالية</item>
+        <item>الدوام</item>
+        <item>عن النظام</item>
+        <item>الاجازة الالكترونية</item>
+        <item>الورديات</item>
+        <item>الاصابات</item>
+        <item>مواعيد العمليات</item>
+        <item>فحص الاتصال</item>
+        <item>مواعيد العيادات الخارجية</item>
+        <item>التحاليل المخبرية</item>
+        <item>مواعيد العيادات في المستشفيات</item>
+        <item>مواعيد العيادات في الرعاية</item>
+
+
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">تسجيل الخروج</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="FCM_PREF">com.moh.app.moh.fcm_pref</string>
+    <string name="FCM_TOKEN">com.moh.app.moh.fcm_token</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="instruction">للاطلاع على تعليمات الصور اضغط هنا</string>
+    <string name="holiday_count">رصيد الاجازات</string>
+    <string name="ok">حسنا</string>
+    <string name="holiday_count_message1">رصيد الاجازة&lt;br /&gt; العادية:.\n  %1$s \n isn&lt;br /&gt; yet avail.\nable, I\'m work.\ning on it, please wait %2$s more days</string>
+    <string name="holiday_count_message">رصيد الاجازة العادية: %1$s &lt;br /&gt; رصيد الاجازة المرحل: %2$s &lt;br /&gt; رصيد الاجازة الطارئة: %3$s</string>
+
+</resources>

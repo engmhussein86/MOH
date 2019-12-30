@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "365911336253",
+    "firebase_url": "https://moh-palestine.firebaseio.com",
+    "project_id": "moh-palestine",
+    "storage_bucket": "moh-palestine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365911336253:android:29d9facb4e178edb",
+        "android_client_info": {
+          "package_name": "com.moh.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365911336253-nd8qb3sb5rk3j4v54gj05nrtsncaihig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moh.app",
+            "certificate_hash": "2dd947acd6b304082092aa9cea9440a3f3719829"
+          }
+        },
+        {
+          "client_id": "365911336253-3765rn11n112p0lhctjtumo7n9dld7sm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDghRyymJ8DEe25HkLUDWuxethirztNG1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365911336253-3765rn11n112p0lhctjtumo7n9dld7sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

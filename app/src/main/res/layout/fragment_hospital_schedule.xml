@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25"
+            android:paddingRight="@dimen/padding"
+            android:text="المستشفى "
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontDesc"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/hospital"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1.75"
+            android:background="@drawable/shape_with_border"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="العيادة"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontDesc"
+            android:textStyle="bold"
+
+            />
+
+        <Spinner
+            android:id="@+id/clinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1.5"
+            android:background="@drawable/shape_with_border" />
+
+        <ImageView
+
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_search_black_24dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/padding"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/LOC_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2.5"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="العيادة"
+            android:textColor="@color/icons"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/CPT_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="الموعد"
+            android:textColor="@color/icons"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/FULL_NAME"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="الطبيب"
+            android:textColor="@color/icons"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/schedule_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

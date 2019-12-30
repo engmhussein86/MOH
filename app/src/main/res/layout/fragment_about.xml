@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="com.moh.app.Fragment_About">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_moi"
+
+        />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/title" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding"
+        android:text="الاصدار V 1.0"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/fontDesc" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding"
+        android:text="التطبيق الرسمي لوزارة الصحة الفلسطينية"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/fontDesc" />
+
+    <Button
+        android:id="@+id/updateApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/profile_height"
+        android:text="تحديث التطبيق" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reserved"
+            android:gravity="center_horizontal"
+            android:text=" طور بواسطة وحدة تكنولوجيا المعلومات - وزارة الصحة الفلسطينية"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/fontDesc" />
+
+        <TextView
+            android:id="@+id/reserved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/padding"
+            android:gravity="center_horizontal"
+            android:text="جميع الحقوق محفوظة © 2019"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/fontDesc" />
+    </RelativeLayout>
+
+
+</LinearLayout>

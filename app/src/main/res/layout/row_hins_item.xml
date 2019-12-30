@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:layout_marginBottom="1dp"
+    android:gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/ID_NO"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1.5"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="رقم الهوية"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/FULL_NAME_AR"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="2"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="الاسم"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/REL_TYPE_DESC"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/icons"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="صلة القرابة"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/camerabtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="@color/icons"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <!--<com.android.volley.toolbox.NetworkImageView-->
+        <!--android:id="@+id/img"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:src="@drawable/ic_camera_alt_red_48dp"-->
+        <!--android:visibility="gone"-->
+
+        <!--/>-->
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_camera_alt_red_48dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

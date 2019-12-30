@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:layout_marginBottom="@dimen/padding"
+    android:background="@drawable/shape"
+    android:gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الاسم:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/MR_FULL_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="1dp"
+            android:text="ت.الميلاد:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/MRP_DOB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الهوية:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/MRP_ID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:text="ت.الزيارة:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/VISIT_TIME"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="المشفى:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/H_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="العيادة:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/LOC_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:text="نوع الحجز:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/VISITTP_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:text="الدكتور:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/DOC_FULL_NAME_AR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="2"
+            android:gravity="center"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

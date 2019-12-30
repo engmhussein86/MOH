@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_red_48dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_insert_drive_file_black_48dp"
+            android:title="@string/nav_news" />
+        <item
+            android:id="@+id/nav_phones"
+            android:icon="@drawable/ic_contact_phone_red_48dp"
+            android:title="@string/nav_phones" />
+
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="@string/nav_contactus" />
+
+        <item
+            android:id="@+id/nav_eservices"
+            android:icon="@drawable/eservices_blue"
+            android:title="@string/nav_eservices" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_red_48dp"
+            android:title="@string/nav_about" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app_red_48dp"
+            android:title="@string/nav_exit" />
+    </group>
+
+
+    <!--<item android:title="Other">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_about_us"-->
+    <!--android:title="@string/nav_eservices" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_privacy_policy"-->
+    <!--android:title="@string/privacy_policy" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+
+</menu>

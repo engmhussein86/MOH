@@ -1,0 +1,28 @@
+<svg height="640"
+    viewBox="0 0 360 640"
+    width="360"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-1{opacity:.26;fill:url(#radial-gradient)}
+        </style>
+        <radialGradient
+            cx=".5"
+            cy=".469"
+            gradientTransform="matrix(1.777 .036 -.064 .999 -.358 -.018)"
+            id="radial-gradient"
+            r=".197">
+            <stop
+                offset="0"
+                stop-color="#fff" />
+            <stop
+                offset="1"
+                stop-color="#1cd1a1" />
+        </radialGradient>
+    </defs>
+    <path
+        class="cls-1"
+        d="M0 0h360v640H0z"
+        data-name="Rectangle 189"
+        id="Rectangle_189" />
+</svg>

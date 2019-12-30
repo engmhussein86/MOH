@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fav_item_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:weightSum="14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <TextView
+            android:id="@+id/fav_phone_sid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/fav_phone_pos"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/icons"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="122"-->
+        <!--android:padding="5dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_weight="2" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fav_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="97082882070"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/phone_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fav_info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_error_black_48dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/fav_del_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/fav_call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_call_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divider"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/is_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/color_ffffff"-->
+    <!--android:padding="1dp"-->
+    <!--android:weightSum="16"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/fav_phone_sid"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/color_029ae6"-->
+    <!--android:textSize="14sp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/fav_phone_pos"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="122"-->
+    <!--android:padding="5dp"-->
+    <!--android:background="@drawable/rounded_shape_blue"-->
+    <!--android:layout_marginLeft="2dp"-->
+    <!--android:layout_weight="2" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/fav_phone_no"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/color_006699"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="1dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="97082882070"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_weight="9" />-->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="5"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/fav_info_btn"-->
+    <!--android:background="@drawable/ic_error_blue24"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/fav_del_btn"-->
+    <!--android:background="@drawable/ic_delete"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp" />-->
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/fav_call_btn"-->
+    <!--android:background="@drawable/ic_call"-->
+    <!--android:layout_marginRight="5dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/color_006699"></LinearLayout>-->
+
+
+    <!--</LinearLayout>-->

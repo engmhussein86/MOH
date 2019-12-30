@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context="com.moh.app.Fragment_ApplicationGrid"
+
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="-1dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/activity_vertical_margin"
+
+
+        ></GridView>
+
+
+    <LinearLayout
+        android:id="@+id/hospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:visibility="visible"
+
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_local_hospital_blue_24dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:text="المستشفيات والرعاية الأولية"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sso_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/eservices_blue"
+
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:text="الدخول الموحد SSO"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/contact103"
+
+            />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:text="الشكاوي 103"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+</LinearLayout>
